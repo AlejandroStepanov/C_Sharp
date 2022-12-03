@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("Првиет! Как тебя зовут?");
 string user = Console.ReadLine();
-if(user.ToLower() == "маша")
+if(user.ToLower()=="маша")
 {
     Console.WriteLine("Ура, это же Маша!");
 }
