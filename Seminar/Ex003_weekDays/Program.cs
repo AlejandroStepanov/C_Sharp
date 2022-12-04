@@ -30,3 +30,13 @@ if(a == 7)
     Console.WriteLine("Sunday!");
 }else{
     Console.WriteLine("Тебе же написали, от 1 до 7! Ты не умеешь читать?!");}
+
+    Console.Clear();
+Console.WriteLine("Enter the number");
+int N = int.Parse(Console.ReadLine());
+int B = -N;
+while(B<=N)
+{
+   Console.WriteLine($"{B}");
+   B++;
+}
