@@ -61,7 +61,7 @@ string MethodFor(int count, string text)
     return result;
 }
 string X = MethodFor(7, "X "); // присвоение
-// Console.WriteLin e(X); //Вывод
+// Console.WriteLin (X); //Вывод
 
 for(int i = 2; i<10; i++)
 {
