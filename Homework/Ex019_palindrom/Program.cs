@@ -1,18 +1,17 @@
 ﻿Console.Clear();
-Console.WriteLine("Сколько ЗНАКОВ в числе?: ");
-int count = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите число: ");
 int num = int.Parse(Console.ReadLine());
+int CountArr =  num.ToString().Length;
+int[] array = new int[CountArr]; //создали массив
 
-int[] array = new int[count]; //Заполняем
 
-for (int i = count - 1; i >= 0; i = i - 1)
+for (int i = CountArr - 1; i >= 0; i = i - 1)//Заполняем
 {
     array[i] = num % 10;
     num = num / 10;
 }
 
-string Pol(int[] array)
+string Pol(int[] array) //метод index == LastIndex ?
 {
     string result = string.Empty;
     int lastInx = array.Length - 1;
@@ -29,8 +28,13 @@ string Pol(int[] array)
     return result;
 
 }
-string YorN = Pol(array);
-Console.WriteLine($"The entered value {YorN} palindrom.");
+string YorN = Pol(array);//прменение метода
+Console.WriteLine($"The entered value {YorN} palindrom.");//печать метода
+
+
+
+
+
 
 
 // i = 0;
