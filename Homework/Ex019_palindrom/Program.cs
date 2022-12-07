@@ -14,12 +14,6 @@ while (i >= 0)
     num = num / 10;
     i = i - 1;
 }
-// i = 0;
-// while (i<array.Length)
-// {
-//     Console.Write($"{array[i]} ");
-//     i++;
-// }
 
 i = 0;
 while (i < array.Length / 2)
@@ -37,3 +31,8 @@ while (i < array.Length / 2)
     Console.WriteLine($"Число {a} палиндром");
     break;
 }
+
+// for (int p = 0; p < array.Length; p++)//печать массива
+// {
+//     Console.Write($"{array[p]} ");
+// }
