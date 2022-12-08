@@ -12,17 +12,17 @@ for(int i = length -1; i>=0; i--)
     num = num/10;
 }
 
-// void PrintArray(int[] col)
-// {
-//     int count = col.Length;
-//     int position = 0;
-//     while (position<count)
-//     {
-//         Console.Write($"{col[position]} ");
-//         position++;
-//     }
-// }
-// PrintArray(array);
+void PrintArray(int[] col)
+{
+    int count = col.Length;
+    int position = 0;
+    while (position<count)
+    {
+        Console.Write($"{col[position]} ");
+        position++;
+    }
+}
+PrintArray(array);
 
 
 int Sum(int[] array)
