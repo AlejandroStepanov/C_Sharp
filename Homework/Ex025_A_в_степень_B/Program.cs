@@ -8,6 +8,14 @@ Console.Write("Введите первое число: ");
 int a = int.Parse(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int b = int.Parse(Console.ReadLine());
-double ab = Math.Pow(a, b);
-Console.WriteLine($"{a}^{b} = {ab}");
+Console.WriteLine($"{a}^{b} = {Cube(a, b)}");
 
+int Cube(int x, int y)
+{
+    int count = 1;
+    for (int i = 1; i <= y; i++)
+    {
+        count = count * x;
+    }
+    return count;
+}
