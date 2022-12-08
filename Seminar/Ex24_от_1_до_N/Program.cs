@@ -3,6 +3,7 @@ Console.Clear();
 Console.WriteLine("Enter the number: ");
 int N = int.Parse(Console.ReadLine());
 Console.WriteLine($"Сумма чисел от 1 до {N} = {Sum(N)}");
+
 int Sum(int N)
 {
     int result = 0;
