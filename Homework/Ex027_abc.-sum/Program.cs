@@ -2,38 +2,29 @@
 Console.Clear();
 Console.WriteLine("Enter the number: ");
 int num = int.Parse(Console.ReadLine());
-int a = num;
-int length =  num.ToString().Length;
-int[] array = new int[length];
+Console.WriteLine($"Сумма цифр {num} = {NumToSum(num)}");
 
-for(int i = length -1; i>=0; i--)
-{
-    array[i] = num%10;
-    num = num/10;
-}
-
-void PrintArray(int[] col)
-{
-    int count = col.Length;
-    int position = 0;
-    while (position<count)
-    {
-        Console.Write($"{col[position]} ");
-        position++;
-    }
-}
-PrintArray(array);
-
-
-int Sum(int[] array)
+int NumToSum(int value)
 {
     int result = 0;
-    for(int j = 0; j<array.Length; j++)
+    for (result = 0; value > 0; value = value / 10)
     {
-      result = result + array[j];  
+        result = result + value % 10;
     }
     return result;
 }
-int sum = Sum(array);
 
-Console.WriteLine($"Сумма цифр числа '{a}' = {sum}");
+
+// NumToArr(num);
+
+// int[] NumToArr(int number)
+// {
+//     int size = num.ToString().Length;
+//     int[] newarray = new int[size];
+//     for (int i = newarray.Length - 1; i >= 0; i--)
+//     {
+//         newarray[i] = number % 10;
+//         number /= 10;
+//     }
+//     return newarray;
+// }

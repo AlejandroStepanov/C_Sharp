@@ -4,25 +4,22 @@
 // 6, 1, 33 -> [6, 1, 33]
 
 Console.Clear();
-Console.WriteLine("Enter the number: ");
-int num = int.Parse(Console.ReadLine());
-int length = num.ToString().Length;
-int[] array = new int[length];
+int[] array = new int[8];
+// Console.WriteLine($"{x}");
 
-for (int i = length - 1; i >=0; i = i -1)
+Fill(array);
+Print(array);
+
+void Fill(int[] arr)
 {
-    array[i] = num % 10;
-    num = num / 10;
+    for (int i = 0; i < arr.Length; i++)
+
+        arr[i] = new Random().Next(1, 100);
 }
 
-
-
-void PrintArray(int[] arr)
+void Print(int[] coll)
 {
-    for(int j = 0; j < arr.Length; j++)
-    {
-        Console.Write($"{arr[j]}");
-    }
+    for(int j = 0; j < coll.Length; j++)
+    Console.Write($"{coll[j]} ");
 }
 
-PrintArray(array);
