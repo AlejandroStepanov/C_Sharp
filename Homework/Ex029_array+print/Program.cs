@@ -19,7 +19,7 @@ void Fill(int[] arr)
 
 void Print(int[] coll)
 {
-    for(int j = 0; j < coll.Length; j++)
-    Console.Write($"{coll[j]} ");
+    for (int j = 0; j < coll.Length; j++)
+        Console.Write($"{coll[j]} ");
 }
 
