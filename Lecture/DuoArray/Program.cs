@@ -42,3 +42,4 @@ PrintArray(matrix);
 FillArray(matrix, 0, 9);
 
 PrintArray(matrix);
+Console.WriteLine($"{matrix[1, 2]}");
