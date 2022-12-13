@@ -6,9 +6,9 @@
 // 8 7,8 -7,1 9
 
 Console.Clear();
-double[,] matrix = new double[3, 4];
+double [,] matrix = new double [3, 4];
 
-void FillMatrix(double[,] matrix, double maxValue, double minValue)
+void FillMatrix(double [,] matrix, int maxValue, int minValue)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
@@ -27,7 +27,7 @@ void PrintMatrix(double[,] matr)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-            Console.Write($"{matr[i, j]:f1} ");
+            Console.Write($"{matr[i, j]:f2} ");
         }
         Console.WriteLine();
     }
