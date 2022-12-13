@@ -1,15 +1,11 @@
 ﻿// Задача 41: Пользователь вводит с клавиатуры M чисел.
 //  Посчитайте, сколько чисел больше 0 ввёл пользователь.
 
-// 0, 7, 8, -2, -2 -> 2
-
-// 1, -7, 567, 89, 223-> 3
 Console.Clear();
-Console.Write("Введите 'b1' , 'k1' , 'b2' , 'k2' через пробел: ");
+Console.Write("Введите числа через через пробел: ");
 string text = Console.ReadLine();
-int[] array = ArrFromString(text);
 
-int[] ArrFromString (string text)
+int[] ArrFromString(string text)
 {
     string[] nums = text.Split(" ", StringSplitOptions.RemoveEmptyEntries);
     int[] result = new int[nums.Length];
@@ -20,5 +16,16 @@ int[] ArrFromString (string text)
     return result;
 }
 
+int[] array = ArrFromString(text);
 
-Console.WriteLine($"[{String.Join(",", array)}]");
+Console.WriteLine($"[{String.Join(", ", array)}]");
+
+int CountPositive(int[] mass)
+{
+    int count = 0;
+    foreach (int x in mass)
+        if (x > 0) count++;
+    return count;
+}
+
+Console.WriteLine($"Количество чисел больше нуля = {CountPositive(array)}");
