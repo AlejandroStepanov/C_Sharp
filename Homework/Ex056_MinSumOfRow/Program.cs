@@ -14,7 +14,7 @@ using System;
 using static System.Console;
 
 Clear();
-int[,] matrix = new int[7, 7];
+int[,] matrix = new int[4, 5];
 
 void FillMatrix(int[,] matr, int minValue, int maxValue)
 {
@@ -57,21 +57,6 @@ int[,] SumRows(int[,] matr)
     }
     return matrResult;
 }
-
-// int[] GetRowArray(int[,] inArray) // Можно сделать так и найти индекс
-// {
-//     int[] result = new int[inArray.GetLength(0)*inArray.GetLength(1)];
-//     int index=0;
-//     for (int i = 0; i < inArray.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < inArray.GetLength(1); j++)
-//         {
-//             result[i * inArray.GetLength(1) + j] = inArray[i,j];
-//             index++;
-//         }
-//     }
-//     return result;
-// }
 
 int[,] array = SumRows(matrix);
 
