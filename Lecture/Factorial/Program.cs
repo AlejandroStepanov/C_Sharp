@@ -22,7 +22,7 @@ int Fibonachi(int n)
     
 }
 
-for (int i =1; i <17; i++)
+for (int i =1; i <5; i++)
 {
     Console.WriteLine($"{Fibonachi(i)}");
 
